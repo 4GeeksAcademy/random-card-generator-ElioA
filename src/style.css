@@ -1,1 +1,25 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.heart {
+  text-align: center;
+  align-self: center;
+  font-size: 8em;
+  margin-top: 60px;
+}
+
+.top-left {
+  padding: 0.1em;
+  font-size: 3em;
+}
+
+.bottom-right {
+  align-self: end;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 3em;
+}
+body {
+  background-color: green;
+}
