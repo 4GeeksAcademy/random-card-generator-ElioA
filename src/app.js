@@ -5,6 +5,7 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
+const button = document.getElementById("myButton");
 const numberTop = document.getElementById("number-top");
 const numberBottom = document.getElementById("number-bottom");
 const centerFigure = document.getElementById("figure");
@@ -17,7 +18,7 @@ window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
 };
-const randomIndex = arr => {
+const randomIndex = (arr) => {
   return (arr = Math.floor(Math.random() * arr.length));
 };
 figure.innerHTML = figures[randomIndex(figures)];
@@ -28,12 +29,10 @@ centerFigure.innerHTML = figures[randomIndex(figures)];
 topFigure.innerHTML = centerFigure.innerHTML;
 bottomFigure.innerHTML = centerFigure.innerHTML;
 
-for (let item of figures) {
-  if (centerFigure.innerHTML === "♥" || centerFigure.innerHTML === "♦") {
-    numberTop.style.color = "red";
-    numberBottom.style.color = "red";
-    centerFigure.style.color = "red";
-    topFigure.style.color = "red";
-    bottomFigure.style.color = "red";
-  }
+if (centerFigure.innerHTML === "♥" || centerFigure.innerHTML === "♦") {
+  numberTop.style.color = "red";
+  numberBottom.style.color = "red";
+  centerFigure.style.color = "red";
+  topFigure.style.color = "red";
+  bottomFigure.style.color = "red";
 }
