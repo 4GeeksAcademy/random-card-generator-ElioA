@@ -23,3 +23,11 @@
 body {
   background-color: green;
 }
+#cardHeight {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+#cardWidth {
+  margin-top: 20px;
+  margin-left: 10px;
+}
