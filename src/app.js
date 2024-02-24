@@ -20,6 +20,7 @@ window.onload = function() {
   getMyRandomCard();
   console.log("Hello Rigo from the console!");
   button.addEventListener("click", getMyRandomCard);
+  setInterval(getMyRandomCard, 10000);
 };
 const randomIndex = arr => {
   return (arr = Math.floor(Math.random() * arr.length));
